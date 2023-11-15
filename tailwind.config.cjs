@@ -5,8 +5,12 @@ const config = {
 	theme: {
 		extend: {
 			colors: {
-				surface: '#17181d',
-				primary: '#f4ad44'
+				surface: {
+					light: '#353637',
+					DEFAULT: '#17181d'
+				},
+				primary: '#f4ad44',
+				secondary: '#699af8'
 			},
 			fontFamily: {
 				head: ['Ibarra Real Nova Variable', 'sans-serif']
