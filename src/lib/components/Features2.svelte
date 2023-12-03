@@ -48,14 +48,14 @@
 	class="w-full h-[1px] max-w-6xl mx-auto [background-image:linear-gradient(90deg,rgba(71,71,65,0),#474741_50%,rgba(71,71,65,0))]"
 />
 
-<div class="relative py-44 overflow-hidden">
+<div class="relative py-36 overflow-hidden">
 	<div
 		class={clsx(
 			'w-[764px] h-[305px] opacity-40 blur-[160px] rounded-full absolute -top-[41px] left-[20%] -z-10',
 			'[background:linear-gradient(267.56deg,#232428_22.11%,#5E7CF1_40.73%,#1E6BFF_54.78%,#133E04_69.88%,#9BCFF2_89.56%)]'
 		)}
 	/>
-	<div class="max-w-6xl mx-auto flex flex-col gap-16 relative">
+	<div class="max-w-6xl mx-auto flex flex-col gap-8 relative">
 		<div class="max-w-5xl mx-auto w-full">
 			<div class="max-w-2xl">
 				<h2 class="text-5xl font-bold">Payments For Every Use Case</h2>
@@ -67,7 +67,10 @@
 		</div>
 
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
-		<div class="grid grid-cols-4 gap-3 group/cards" on:mousemove={debounce(mouseMove, 15)}>
+		<div
+			class="grid grid-cols-4 gap-3 group/cards py-8 px-8 -mx-8"
+			on:mousemove={debounce(mouseMove, 15)}
+		>
 			{#each financialFeatures as feature, i}
 				<div
 					class={clsx(
@@ -95,7 +98,7 @@
 								src={feature.image}
 								alt={feature.name}
 								class={clsx(
-									'aspect-[4/3] w-full h-full object-cover grayscale blur-[2px] group-hover/card:blur-none transition-all delay-150'
+									'aspect-[4/3] w-full h-full object-cover grayscale group-hover/card:grayscale-0 transition-all delay-150'
 								)}
 							/>
 						</div>
