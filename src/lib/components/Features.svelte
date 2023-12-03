@@ -3,7 +3,8 @@
 		{
 			title: 'Unified Crypto & <br/> Fiat Treasury',
 			description:
-				'An integrated, compliant, and secured custody solution for fiat and cryptocurrencies.'
+				'An integrated, compliant, and secured custody solution for fiat and cryptocurrencies.',
+			image: '/images/wallet.jpg'
 		},
 		{
 			title: 'Instant Liquidity',
@@ -12,7 +13,8 @@
 				'Buy & sell crypto directly from liquidity providers and get the best prices',
 				'Automatic cost basis, gains, and losses calculations',
 				'No daily or weekly transaction limits'
-			]
+			],
+			image: '/images/funds.jpg'
 		}
 	];
 </script>
@@ -44,13 +46,20 @@
 					{/if}
 				</div>
 
-				<div class="col-span-3">
+				<div class="col-span-3 pl-40 py-12 pr-0">
 					<img
-						src="https://uploads-ssl.webflow.com/63281d362a9501fa6e9f6aae/6389ba275e4c1946ffd9ca82_fund-stack-static.png"
+						src={feature.image}
 						alt="Wallet"
+						class="aspect-square object-cover f-image grayscale"
 					/>
 				</div>
 			</div>
 		</div>
 	{/each}
 </div>
+
+<style lang="postcss">
+	.f-image {
+		mask: radial-gradient(circle, black 50%, transparent 70%);
+	}
+</style>

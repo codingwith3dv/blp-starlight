@@ -16,9 +16,9 @@
 
 	<div class="w-full max-w-5xl shadow-[0px_20px_200px_10px_#f4ad4420]">
 		<img
-			src="https://uploads-ssl.webflow.com/63281d362a9501fa6e9f6aae/64a86dc193be72508a56f9e9_hero%20screenshot%202.png"
+			src="/images/dashboard.png"
 			loading="eager"
-			class="w-full h-full"
+			class="w-full h-full aspect-video object-cover grayscale rounded-xl"
 			alt=""
 		/>
 	</div>
