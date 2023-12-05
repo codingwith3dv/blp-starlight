@@ -97,7 +97,7 @@
 	<span
 		class="mt-12 inline-block text-sm text-neutral-400 [&>a]:underline hover:[&>a]:text-white [&>a]:transition-colors"
 	>
-		Made by <a target="_blank" href="https://x.com/cw3dv">Devesh Das</a>. Website based on
+		Built by <a target="_blank" href="https://x.com/cw3dv">Devesh Das</a>. Website based on
 		<a target="_blank" href="https://starlight.money">Starlight</a> ( All copy is copied from the
 		Starlight website 😅 ). <br /><br />
 		<a
