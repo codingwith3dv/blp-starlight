@@ -73,22 +73,37 @@
 
 <div class="w-full h-[1px] mx-auto bg-[#474741]" />
 
-<footer class="py-16 max-w-6xl mx-auto grid grid-cols-5 gap-8">
-	<div class="col-span-2">
-		<img src="/logo.svg" alt="Logo" class="w-36 pointer-events-none" />
+<footer class="py-16 px-5 max-w-6xl mx-auto">
+	<div class="grid lg:grid-cols-5 gap-16 lg:gap-8">
+		<div class="col-span-2">
+			<img src="/logo.svg" alt="Logo" class="w-32 pointer-events-none" />
+		</div>
+		<div class="col-span-3 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-10">
+			{#each links as linkGroup}
+				<div class="flex flex-col gap-4 text-lg">
+					<span class="font-semibold">{linkGroup.name}</span>
+					{#each linkGroup.links as link}
+						<a
+							href={link.href}
+							class="inline-block text-neutral-400 hover:text-white transition-all w-fit"
+							>{link.name}</a
+						>
+					{/each}
+				</div>
+			{/each}
+		</div>
 	</div>
-	<div class="col-span-3 grid grid-cols-4 gap-4">
-		{#each links as linkGroup}
-			<div class="flex flex-col gap-4 text-lg">
-				<span class="font-semibold">{linkGroup.name}</span>
-				{#each linkGroup.links as link}
-					<a
-						href={link.href}
-						class="inline-block text-neutral-400 hover:text-white transition-all w-fit"
-						>{link.name}</a
-					>
-				{/each}
-			</div>
-		{/each}
-	</div>
+
+	<span
+		class="mt-12 inline-block text-sm text-neutral-400 [&>a]:underline hover:[&>a]:text-white [&>a]:transition-colors"
+	>
+		Made by <a target="_blank" href="https://x.com/cw3dv">Devesh Das</a>. Website based on
+		<a target="_blank" href="https://starlight.money">Starlight</a> ( All copy is copied from the
+		Starlight website 😅 ). <br /><br />
+		<a
+			target="_blank"
+			href="https://buildlandingpage.frontavo.com"
+			class="text-[175%] brightness-125">Want a landing page website like this?</a
+		>
+	</span>
 </footer>

@@ -47,7 +47,7 @@
 	class="w-full h-[1px] max-w-6xl mx-auto [background-image:linear-gradient(90deg,rgba(71,71,65,0),#474741_50%,rgba(71,71,65,0))]"
 />
 
-<div class="relative py-36 overflow-hidden">
+<div class="relative py-20 md:py-36 px-5 overflow-hidden">
 	<div
 		class={clsx(
 			'w-[748px] h-[278px] opacity-40 blur-[160px] rounded-full absolute top-[175px] left-[15%] bottom-auto -z-10',
@@ -55,7 +55,7 @@
 			'[grid-area:span_1/span_1/span_1/span_1]'
 		)}
 	/>
-	<div class="max-w-6xl mx-auto gap-8 relative grid grid-cols-[0.5fr_1fr]">
+	<div class="max-w-6xl mx-auto gap-16 lg:gap-8 relative grid lg:grid-cols-[0.5fr_1fr]">
 		<div class="max-w-5xl mx-auto w-full">
 			<div class="max-w-2xl">
 				<h2 class="text-4xl font-bold">Frequently Asked Questions</h2>

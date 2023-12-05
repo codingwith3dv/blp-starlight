@@ -3,7 +3,7 @@
 
 	const features = [
 		{
-			title: 'Unified Crypto & <br/> Fiat Treasury',
+			title: 'Unified Crypto & Fiat Treasury',
 			description:
 				'An integrated, compliant, and secured custody solution for fiat and cryptocurrencies.',
 			image: '/images/wallet.jpg'
@@ -21,18 +21,18 @@
 	];
 </script>
 
-<div class="pb-44 max-w-6xl mx-auto flex flex-col gap-16">
+<div class="pb-20 md:pb-44 px-5 max-w-6xl mx-auto flex flex-col gap-16">
 	{#each features as feature, i}
 		<div
 			class={clsx(
 				i === 0 && 'z-10',
-				'shadow-2xl px-16 py-2 bg-surface border border-surface-light rounded-2xl sticky bottom-5',
+				'shadow-2xl px-8 py-8 md:px-10 md:py-10 lg:px-16 lg:py-2 bg-surface border border-surface-light rounded-2xl lg:sticky bottom-5',
 				'bg-gradient-to-tr from-transparent to-primary/5'
 			)}
 		>
-			<div class="grid grid-cols-5 items-center justify-between">
-				<div class="col-span-2">
-					<h2 class="text-5xl font-bold">{@html feature.title}</h2>
+			<div class="grid lg:grid-cols-5 items-center justify-between">
+				<div class="lg:col-span-2">
+					<h2 class="text-3xl lg:text-5xl font-bold">{feature.title}</h2>
 					<p class="text-xl font-medium {feature.list ? 'mt-5' : 'mt-10'} text-neutral-400">
 						{feature.description}
 					</p>
@@ -50,7 +50,7 @@
 					{/if}
 				</div>
 
-				<div class="col-span-3 pl-40 py-12 pr-0">
+				<div class="lg:col-span-3 lg:pl-40 py-6 md:py-12 pr-0">
 					<img
 						src={feature.image}
 						alt="Wallet"

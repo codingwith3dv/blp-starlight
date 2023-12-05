@@ -20,12 +20,12 @@
 
 <div class="hero relative">
 	<Header />
-	<div class="flex flex-col justify-center items-center py-44">
-		<div class="max-w-3xl flex flex-col justify-center items-center mb-32">
-			<h1 class="text-8xl text-center font-head inline-block mb-5">
+	<div class="flex flex-col justify-center items-center py-24 lg:py-44 px-5">
+		<div class="max-w-lg lg:max-w-3xl flex flex-col justify-center items-center mb-24 md:mb-32">
+			<h1 class="text-4xl md:text-6xl lg:text-8xl text-center font-head inline-block mb-5">
 				The Financial OS<br /> for Web3 Teams
 			</h1>
-			<p class="text-xl text-center text-neutral-200 inline-block mb-14">
+			<p class="md:text-lg lg:text-xl text-center text-neutral-300/80 inline-block mb-14">
 				Finances built for the future. Meet the fastest, most secure, and compliant platform to
 				manage your team's money and digital assets.
 			</p>
@@ -65,7 +65,7 @@
 			</div>
 		</div>
 
-		<div class="pt-32 flex flex-col items-center text-center gap-8 w-full">
+		<div class="pt-10 md:pt-32 flex flex-col items-center text-center gap-8 w-full">
 			<h2 class="text-neutral-500 font-medium">Powering the next generation of builders</h2>
 
 			<div
@@ -246,11 +246,13 @@
 
 <style lang="postcss">
 	.hero {
-		opacity: 0.85;
 		--w: 1px;
 		--s: 70px;
-		background-image: linear-gradient(#303134 var(--w), transparent var(--w)),
-			linear-gradient(to right, #303134 var(--w), transparent var(--w));
+		background-image: linear-gradient(#303134aa var(--w), transparent var(--w)),
+			linear-gradient(to right, #303134aa var(--w), transparent var(--w));
 		background-size: var(--s) var(--s);
+
+		mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
+		-webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 90%, transparent);
 	}
 </style>

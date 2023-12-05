@@ -17,7 +17,7 @@
 	class={clsx(
 		'appearance-none inline-flex gap-2 justify-center items-center text-center whitespace-nowrap',
 		'transition-all duration-300',
-		'rounded-lg font-medium',
+		'rounded-lg',
 		'disabled:cursor-not-allowed disabled:opacity-50',
 		'hover:brightness-110 active:scale-[0.9875]',
 		'border border-primary',

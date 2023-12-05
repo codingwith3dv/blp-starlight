@@ -6,32 +6,32 @@
 		{
 			name: 'Enterprise Grade Security',
 			image: '/images/f-3-001.jpg',
-			gridClass: 'col-span-3'
+			gridClass: 'md:col-span-3 lg:col-span-3'
 		},
 		{
 			name: 'Automated Payments',
 			image: '/images/f-3-002.jpg',
-			gridClass: 'col-span-5'
+			gridClass: 'md:col-span-5 lg:col-span-5'
 		},
 		{
 			name: 'Custom Roles & Permissions',
 			image: '/images/f-3-003.jpg',
-			gridClass: 'col-span-4 row-span-2'
+			gridClass: 'md:col-span-2 md:row-span-2 lg:col-span-4 lg:row-span-2'
 		},
 		{
 			name: 'Automated Gain & Loss Calculations',
 			image: '/images/f-3-004.jpg',
-			gridClass: 'col-span-2'
+			gridClass: 'md:col-span-3 lg:col-span-2'
 		},
 		{
 			name: 'Cards for Crypto & Finance',
 			image: '/images/f-3-005.jpg',
-			gridClass: 'col-span-4'
+			gridClass: 'md:col-span-3 lg:col-span-4'
 		},
 		{
 			name: 'Extensive Notifications',
 			image: '/images/f-3-006.jpg',
-			gridClass: 'col-span-2'
+			gridClass: 'md:col-span-6 lg:col-span-2'
 		}
 	];
 
@@ -54,9 +54,9 @@
 	class="w-full h-[1px] max-w-6xl mx-auto [background-image:linear-gradient(90deg,rgba(71,71,65,0),#474741_50%,rgba(71,71,65,0))]"
 />
 
-<div class="py-36 max-w-6xl mx-auto flex flex-col gap-8">
+<div class="px-5 py-20 md:py-36 max-w-6xl mx-auto flex flex-col gap-8">
 	<div class="max-w-5xl mx-auto w-full">
-		<h2 class="text-5xl font-bold">A Few More Things You’re Going To Love</h2>
+		<h2 class="text-4xl lg:text-5xl font-bold">A Few More Things You’re Going To Love</h2>
 		<p class="text-xl font-medium mt-5 text-neutral-400">
 			Starlight is built from the ground up for organizations to operate in both crypto and fiat.
 		</p>
@@ -64,7 +64,7 @@
 
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div
-		class="grid grid-cols-12 gap-4 group/cards py-8 px-8 -mx-8"
+		class="grid md:grid-cols-8 lg:grid-cols-12 gap-4 group/cards pt-8 md:pb-8 px-5 -mx-5"
 		on:mousemove={debounce(mouseMove, 15)}
 	>
 		{#each businessFeatures as feature, i}
