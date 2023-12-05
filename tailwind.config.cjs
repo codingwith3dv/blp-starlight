@@ -14,6 +14,9 @@ const config = {
 			},
 			fontFamily: {
 				head: ['Ibarra Real Nova Variable', 'sans-serif']
+			},
+			maxWidth: {
+				'8xl': '88rem'
 			}
 		}
 	},

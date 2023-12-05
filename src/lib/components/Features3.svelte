@@ -95,7 +95,7 @@
 						alt={feature.name}
 						class={clsx(
 							'aspect-[4/3] w-full h-full object-cover grayscale group-hover/card:grayscale-0 transition-all delay-150',
-							'opacity-50'
+							'opacity-50 pointer-events-none'
 						)}
 					/>
 

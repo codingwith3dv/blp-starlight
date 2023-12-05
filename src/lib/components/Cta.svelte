@@ -10,8 +10,8 @@
 <div class="relative py-36 overflow-hidden">
 	<div
 		class={clsx(
-			'w-[764px] h-[305px] opacity-40 blur-[160px] rounded-full absolute -top-[41px] left-[20%] -z-10',
-			'[background:linear-gradient(267.56deg,#232428_22.11%,#5E7CF1_40.73%,#1E6BFF_54.78%,#133E04_69.88%,#9BCFF2_89.56%)]'
+			'w-[748px] h-[248px] opacity-40 blur-[160px] rounded-full absolute top-0 bottom-auto left-[20%] -z-10',
+			'[background:linear-gradient(312.23deg,#FABE65_-3.97%,rgba(251,131,160,0)_125.5%)]'
 		)}
 	/>
 	<div class="max-w-6xl mx-auto flex flex-col gap-8 relative">

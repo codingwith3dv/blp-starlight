@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { clsx } from 'clsx';
+
 	const features = [
 		{
 			title: 'Unified Crypto & <br/> Fiat Treasury',
@@ -22,9 +24,11 @@
 <div class="pb-44 max-w-6xl mx-auto flex flex-col gap-16">
 	{#each features as feature, i}
 		<div
-			class="{i === 0
-				? 'z-10'
-				: ''} shadow-2xl px-16 py-2 bg-surface border border-surface-light rounded-2xl sticky bottom-5 bg-[url(https://uploads-ssl.webflow.com/63281d362a9501fa6e9f6aae/6332be8adb492c05cbaff2ad_tunnel-bg.png)] bg-cover bg-[50%]"
+			class={clsx(
+				i === 0 && 'z-10',
+				'shadow-2xl px-16 py-2 bg-surface border border-surface-light rounded-2xl sticky bottom-5',
+				'bg-gradient-to-tr from-transparent to-primary/5'
+			)}
 		>
 			<div class="grid grid-cols-5 items-center justify-between">
 				<div class="col-span-2">
@@ -50,7 +54,7 @@
 					<img
 						src={feature.image}
 						alt="Wallet"
-						class="aspect-square object-cover f-image grayscale"
+						class="aspect-square object-cover f-image grayscale pointer-events-none"
 					/>
 				</div>
 			</div>
