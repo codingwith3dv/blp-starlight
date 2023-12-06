@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { clsx } from 'clsx';
 
+	// If provided, button becomes a link
 	export let href: string | undefined = undefined;
 	export let target: HTMLAnchorElement['target'] | undefined = undefined;
+
 	export let variant: 'regular' | 'outline' = 'regular';
 	export let size: 'sm' | 'base' | 'lg' = 'base';
 
@@ -16,7 +18,7 @@
 	{...$$restProps}
 	class={clsx(
 		'appearance-none inline-flex gap-2 justify-center items-center text-center whitespace-nowrap',
-		'transition-all duration-300',
+		'transition-all duration-300 cursor-pointer',
 		'rounded-lg',
 		'disabled:cursor-not-allowed disabled:opacity-50',
 		'hover:brightness-110 active:scale-[0.9875]',

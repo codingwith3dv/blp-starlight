@@ -1,18 +1,12 @@
-# create-svelte
+# Starlight clone using Sveltekit + TailwindCSS
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Original website: [starlight.money](https://starlight.money)
 
-## Creating a project
+Cloned website: [starlight.buildlandingpage.frontavo.com](https://starlight.buildlandingpage.frontavo.com)
 
-If you're seeing this, you've probably already done this step. Congrats!
+# Want websites like these?
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Head over to [BuildLandingPage](https://buildlandingpage.frontavo.com) and book a 30-min booking call with me.
 
 ## Developing
 

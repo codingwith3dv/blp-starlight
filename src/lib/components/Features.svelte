@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Features 1 - Sticky cards
 	import { clsx } from 'clsx';
 
 	const features = [
@@ -23,6 +24,7 @@
 
 <div class="pb-20 md:pb-44 px-5 max-w-6xl mx-auto flex flex-col gap-16">
 	{#each features as feature, i}
+		<!-- Card magic happens in this div -->
 		<div
 			class={clsx(
 				i === 0 && 'z-10',

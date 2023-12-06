@@ -23,6 +23,7 @@
 		/>
 	</button>
 
+	<!-- Nice little trick to transition between height 0 and height auto -->
 	<div
 		class={clsx('overflow-hidden grid grid-rows-[0fr] transition-all', open && 'grid-rows-[1fr]')}
 	>

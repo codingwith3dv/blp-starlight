@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Feature 3 - Complex grid
 	import { clsx } from 'clsx';
 	import debounce from 'debounce';
 
@@ -36,6 +37,8 @@
 	];
 
 	let cards: (HTMLElement | null)[] = [];
+
+	// For that juicy mouseover effect
 	const mouseMove = (event: MouseEvent & { currentTarget: EventTarget }) => {
 		for (const card of cards) {
 			if (card) {
@@ -50,6 +53,7 @@
 	};
 </script>
 
+<!-- Gradient border -->
 <div
 	class="w-full h-[1px] max-w-6xl mx-auto [background-image:linear-gradient(90deg,rgba(71,71,65,0),#474741_50%,rgba(71,71,65,0))]"
 />
@@ -62,6 +66,7 @@
 		</p>
 	</div>
 
+	<!-- https://youtu.be/htGfnF1zN4g?si=zDE9NC24IGkOKfZN - Video by Hyperplexed on Youtube -->
 	<!-- svelte-ignore a11y-no-static-element-interactions -->
 	<div
 		class="grid md:grid-cols-8 lg:grid-cols-12 gap-4 group/cards pt-8 md:pb-8 px-5 -mx-5"

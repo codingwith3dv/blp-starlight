@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Handles the SEO 😉
 	import { page } from '$app/stores';
 	import { MetaTags } from 'svelte-meta-tags';
 

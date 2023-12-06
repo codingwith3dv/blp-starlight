@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Footer links
 	const links = [
 		{
 			name: 'Product',
@@ -73,7 +74,7 @@
 
 <div class="w-full h-[1px] mx-auto bg-[#474741]" />
 
-<footer class="py-16 px-5 md:px-0 max-w-6xl mx-auto">
+<footer class="py-16 px-5 max-w-6xl mx-auto">
 	<div class="grid lg:grid-cols-5 gap-16 lg:gap-8">
 		<div class="col-span-2">
 			<img src="/logo.svg" alt="Logo" class="w-32 pointer-events-none" />

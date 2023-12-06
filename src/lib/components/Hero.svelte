@@ -1,4 +1,5 @@
 <script lang="ts">
+	// The HEROOO
 	import Button from '$lib/components/Button.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import { clsx } from 'clsx';
@@ -6,6 +7,7 @@
 
 	let image: HTMLDivElement | null;
 
+	// For that juicy mouseover effect
 	const mouseMove = (event: MouseEvent & { currentTarget: EventTarget }) => {
 		if (image) {
 			const rect = image.getBoundingClientRect(),
@@ -19,6 +21,8 @@
 </script>
 
 <div class="hero relative">
+	<!-- Header and Hero shares the same background grid effect -->
+	<!-- See `<style>` at the bottom -->
 	<Header />
 	<div class="flex flex-col justify-center items-center py-24 lg:py-44 px-5">
 		<div class="max-w-lg lg:max-w-3xl flex flex-col justify-center items-center mb-24 md:mb-32">
@@ -32,6 +36,7 @@
 			<Button variant="outline" size="lg">Sign up for early access</Button>
 		</div>
 
+		<!-- https://youtu.be/htGfnF1zN4g?si=zDE9NC24IGkOKfZN - Video by Hyperplexed on Youtube -->
 		<!-- svelte-ignore a11y-no-static-element-interactions -->
 		<div
 			class={clsx(

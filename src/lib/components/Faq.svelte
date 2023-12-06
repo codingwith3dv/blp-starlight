@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Frequently Asked Questions
 	import { clsx } from 'clsx';
 	import FaqItem from './FaqItem.svelte';
 
@@ -43,6 +44,7 @@
 	];
 </script>
 
+<!-- Gradient border -->
 <div
 	class="w-full h-[1px] max-w-6xl mx-auto [background-image:linear-gradient(90deg,rgba(71,71,65,0),#474741_50%,rgba(71,71,65,0))]"
 />

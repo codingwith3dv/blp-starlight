@@ -1,8 +1,10 @@
 <script lang="ts">
+	// Call TO Action (CTA)
 	import { clsx } from 'clsx';
 	import Button from './Button.svelte';
 </script>
 
+<!-- Gradient border -->
 <div
 	class="w-full h-[1px] max-w-6xl mx-auto [background-image:linear-gradient(90deg,rgba(71,71,65,0),#474741_50%,rgba(71,71,65,0))]"
 />
@@ -27,6 +29,7 @@
 			<img
 				src="/images/cards.png"
 				alt="Cards"
+				loading="lazy"
 				class="lg:col-span-2 scale-[1.1] lg:scale-[1.5] object-contain mix-blend-screen pointer-events-none [mask:radial-gradient(circle,black_20%,transparent_70%)]"
 			/>
 		</div>

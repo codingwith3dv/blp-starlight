@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Header
 	import { onMount } from 'svelte';
 	import { Hamburger } from 'svelte-hamburgers';
 	import { writable } from 'svelte/store';
@@ -27,6 +28,7 @@
 
 	onMount(() => {
 		const unsubscribe = drawerOpen.subscribe((v) => {
+			// For stopping scroll when menu is open on mobile
 			if (v) document.body.style.overflowY = 'hidden';
 			else document.body.style.overflowY = 'auto';
 		});
